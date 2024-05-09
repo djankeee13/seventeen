@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+ --color-1: #2D4059;
+ --color-2: #EA5455;
+ --color-3: #F07B3F;
+ --color-4: #FFD460;
+ --color-text: #fff;
+}
+
+.header-text{
+    font-weight: bold;
+    color: var(--color-2); 
+}
+.button{
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: var(--color-2);
+    color: var(--color-text);
+    border: none;
+    border-radius: 5px;
+    margin:0px 5px;
+}
+.router-button{
+    font-weight: bold;
+    padding: 10px 25px;
+    background-color: var(--color-2);
+    color: var(--color-text);
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.active-button{
+    background-color: var(--color-3); 
+}
+.example-box{
+    padding: 10px;
+    background-color: var(--color-4);
+    margin: 5px 0px;
+    width: max-content;
+}

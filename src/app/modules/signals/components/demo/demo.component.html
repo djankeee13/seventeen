@@ -1,0 +1,16 @@
+<div>
+    <select 
+    [ngModel]="quantity()"
+    (change)="onQuantitySelected($any($event.target).value)">
+    <option disabled value="">--Select a quantity--</option>
+    <option *ngFor="let q of qtyAvailable()">{{q}}</option>
+    </select>
+    <button (click)="updateQuantity()" class="button">MULTIPLE QUNATITY BY 2</button>
+    <div class="example-box">{{quantity()}}</div>
+</div>
+<div class="example-box">
+    <div>Vehlice: {{selectedVehlice().name}}</div>
+    <div>Price: {{selectedVehlice().price | number: '1.2-2'}} </div>
+    <div class="total">Total: {{exPrice() | number: '1.2-2'}}</div>
+    <button class="button" (click)="updateCarPrice()">UPDATE PRICE OF CAR</button>
+</div>

@@ -1,0 +1,11 @@
+.nav{
+    cursor: pointer;
+    display: flex;
+    background-color: var(--color-1);
+    color: var(--color-text);
+    padding: 15px;
+    font-weight: bold;
+    .nav-item{
+        padding: 0px 10px;
+    }
+}

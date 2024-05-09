@@ -1,0 +1,5 @@
+<nav class="nav" >
+    <div *ngFor="let item of menu">
+        <div class="nav-item" routerLink="{{item.path}}">{{item.name}}</div>
+    </div>
+</nav>

@@ -1,0 +1,66 @@
+<h1 class="text-center header-text">SIGNALS</h1>
+<button class="router-button" routerLink="demo" [routerLinkActive]="'active-button'">DEMO</button>
+<button class="router-button" routerLink="rxjs" [routerLinkActive]="'active-button'">RXJS</button>
+<router-outlet></router-outlet>
+<!-- <div>
+    <span>A signal is a wrapper around a value that can notify interested consumers when that value changes. Signals can
+        contain any value, from simple primitives to complex data structures.
+        Writable signals provide an API for updating their values directly. You create writable signals by calling the
+        signal function with the signal's initial value:
+    </span>
+    <div class="example-box">
+        const count = signal(0); <br>
+        // Signals are getter functions - calling them reads their value. <br>
+        console.log('The count is: ' + count());
+    </div>
+    <span>To change the value of a writable signal, you can either .set() it directly:</span>
+    <div class="example-box">
+        count.set(3);
+    </div>
+    <span>or use the .update() operation to compute a new value from the previous one:</span>
+    <div class="example-box">
+        // Increment the count by 1. <br>
+        count.update(value => value + 1);
+    </div>
+    <span>Computed signals
+        A computed signal derives its value from other signals. Define one using computed and specifying a derivation
+        function:
+    </span>
+    <div class="example-box">
+        const count: WritableSignal-number = signal(0); <br>
+        const doubleCount: Signal-number = computed(() => count() * 2);
+    </div>
+    <span>
+        The doubleCount signal depends on count. Whenever count updates, Angular knows that anything which depends on
+        either count or doubleCount needs to update as well.
+
+        Computed signals are both lazily evaluated and memoized
+        doubleCount's derivation function does not run to calculate its value until the first time doubleCount is read.
+        Once calculated, this value is cached, and future reads of doubleCount will return the cached value without
+        recalculating.
+
+        When count changes, it tells doubleCount that its cached value is no longer valid, and the value is only
+        recalculated on the next read of doubleCount.
+
+        As a result, it's safe to perform computationally expensive derivations in computed signals, such as filtering
+        arrays.
+
+        Computed signals are not writable signals
+        You cannot directly assign values to a computed signal. That is,
+    </span>
+    <div class="example-box">
+        doubleCount.set(3);
+    </div>
+    <span>
+        produces a compilation error, because doubleCount is not a WritableSignal.
+
+        Computed signal dependencies are dynamic
+        Only the signals actually read during the derivation are tracked. For example, in this computed the count signal
+        is only read conditionally:
+    </span>
+    <div class="example-box">
+        <a href="https://angular.io/guide/signals" target="_blank">
+            LINK ANGULAR SIGNALS
+        </a>
+    </div>
+</div> -->
